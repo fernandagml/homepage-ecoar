@@ -1,3 +1,30 @@
+.section-inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.inicio-apresentacao{
+    display: flex;
+    flex-direction: row;
+    gap: 170px;
+}
+
+.title h1{
+    font-size: 100px;
+}
+
+.title p{
+    font-size: 40px;
+}
+
+.image-visual img{
+    height: 80vh;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+
 .section-inicio__galeria{
     display: flex;
     justify-content: top;
@@ -18,7 +45,7 @@
     
     /* Posição relativa para posicionar os elementos de navegação */
     position: relative;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
 }
 
 /* 2. ESTILO DOS INPUTS (Escondidos) */
