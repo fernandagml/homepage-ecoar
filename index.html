@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoar Botânica</title>
+
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+<body>
+    <header class="header">
+        <section class="header-logo">
+            <a href="#inicio"><img src="./src/assets/icons/logo.svg" alt="Logo Ecoar"></a>
+        </section>
+        <section class="header-paginas">
+            <ul>
+                <a href="#aromatizantes">
+                    <li>Aromatizantes</li>
+                </a>
+                <a href="#homesprays">
+                    <li>Home Sprays</li>
+                </a>
+                <a href="#sabonetes">
+                    <li>Sabonetes</li>
+                </a>
+                <a href="#velas">
+                    <li>Velas</li>
+                </a>
+            </ul>
+        </section>
+        <section class="header-usuario">
+            <div class="usuario header-login">
+                <img src="" alt="Login">
+            </div>
+            <div class="usuario header-shop">
+                <img src="" alt="Shop">
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <section id="inicio" class="main-content section-inicio">
+            <div class="carrossel">
+        
+                <input type="radio" name="slide" id="foto1" checked>
+                <input type="radio" name="slide" id="foto2">
+                <input type="radio" name="slide" id="foto3">
+        
+                <div class="fotos">
+                    <div class="foto">
+                        <img src="src/assets/image/img-velasdecor-ecoar.png" alt="Velas Decorativas">
+                    </div>
+                    <div class="foto">
+                        <img src="src/assets/image/img-sabonetes-ecoar.png" alt="Sabonetes">
+                    </div>
+                    <div class="foto">
+                        <img src="src/assets/image/img-velas-ecoar.png" alt="Velas">
+                    </div>
+                </div>
+        
+                <div class="navigation">
+                    <label for="foto1" class="bar"></label>
+                    <label for="foto2" class="bar"></label>
+                    <label for="foto3" class="bar"></label>
+                </div>
+            </div>
+        </section>
+        <section id="aromatizantes" class="main-content section-aroma">
+            <h1>Aromatizantes</h1>
+        </section>
+        <section id="homesprays" class="main-content section-sprays">
+            <h1>Home Sprays</h1>
+        </section>
+        <section id="sabonetes" class="main-content section-sabonetes">
+            <h1>Sabonetes</h1>
+        </section>
+        <section id="velas" class="main-content section-velas">
+            <h1>Velas</h1>
+        </section>
+    </main>
+</body>
+</html>
