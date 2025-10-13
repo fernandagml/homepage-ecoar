@@ -1,3 +1,15 @@
+.main-content{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.main-content h1{
+    font-family: 'Vonca', sans-serif;
+    font-size: 60px;
+}
+
 .section-inicio{
     display: flex;
     flex-direction: column;
@@ -13,74 +25,72 @@
 }
 
 .title h1{
-    font-size: 100px;
+    font-family: 'Vonca', sans-serif;
+    font-size: 140px;
 }
 
 .title p{
+    color: #ad9a58;
     font-size: 40px;
 }
 
 .image-visual img{
-    height: 80vh;
+    height: 70vh;
     box-shadow: 0 10px 15px rgba(0,0,0,0.3);
 }
 
-.section-inicio__galeria{
+.section-destaques{
     display: flex;
-    justify-content: top;
-    align-items: center;
     flex-direction: column;
-    min-height: 100vh;
-    background-color: #f4f4f4;
+    gap: 20px;
 }
 
-/* 1. ESTILO DO CONTAINER PRINCIPAL */
-.carrossel {
-    /* Define o tamanho visível do carrossel (a "janela") */
-    width: 80vw;
+.carrossel-anuncio {
+    width: 75vw;
     height: 80vh;
-    
-    /* ESCONDE AS IMAGENS QUE ESTÃO FORA DA VISTA */
+
     overflow: hidden; 
-    
-    /* Posição relativa para posicionar os elementos de navegação */
+
     position: relative;
     box-shadow: 0 10px 15px rgba(0,0,0,0.3);
 }
 
-/* 2. ESTILO DOS INPUTS (Escondidos) */
-.carrossel input {
-    display: none; /* Esconde os botões de rádio originais */
+.carrossel-anuncio input {
+    display: none;
 }
 
-/* 3. ESTILO DO CONTAINER DA FILA DE IMAGENS */
 .fotos {
-    /* Calcula a largura total: 3 imagens * 100% da largura do carrossel */
-    width: 300%; /* 3 imagens * 100% = 300% */
+    /* 3 imagens 100% = 300% */
+    width: 300%;
     height: 100%;
-    display: flex; /* Coloca os slides lado a lado */
-    transition: all 0.6s ease; /* Adiciona uma transição suave para o deslize */
+    display: flex;
+    transition: all 0.5s ease;
 }
 
-/* 4. ESTILO DE CADA IMAGEM/SLIDE */
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    /* serve para centralizar a navegação */
+    transform: translateX(-50%);
+    display: flex;
+}
+
 .slide {
-    width: 33.333%; /* Cada slide ocupa 1/3 da largura total (300% / 3) */
+    width: 33.333%;
     height: 100%;
 }
 
 .foto img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Garante que a imagem preenche o slide sem distorção */
+    object-fit: cover;
 }
 
-
-/* 5. ESTILO DA NAVEGAÇÃO (As barras/pontinhos) */
 .navigation {
     position: absolute;
     bottom: 20px;
     left: 50%;
-    transform: translateX(-50%); /* Centraliza a navegação */
     display: flex;
 }
 
@@ -102,15 +112,15 @@
 #foto1:checked ~ .fotos {
     margin-left: 0; 
 }
-/*  move a fila 100% para a esquerda (mostrando a 2ª imagem) */
+/*  move a imagem 1 100% para a esquerda (mostrando a 2ª imagem) */
 #foto2:checked ~ .fotos {
     margin-left: -100%;
 }
-/* move a fila 200% para a esquerda (mostrando a 3ª imagem) */
+/* move a imagem 2 200% para a esquerda (mostrando a 3ª imagem) */
 #foto3:checked ~ .fotos {
     margin-left: -200%;
 }
-/* Efeito de destaque na barra ativa */
+/* efeito de destaque da navegação */
 #foto1:checked ~ .navigation .bar:nth-child(1),
 #foto2:checked ~ .navigation .bar:nth-child(2),
 #foto3:checked ~ .navigation .bar:nth-child(3) {

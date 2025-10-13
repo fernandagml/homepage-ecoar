@@ -9,11 +9,13 @@
     <link rel="stylesheet" href="./src/styles/global.css">
     <link rel="stylesheet" href="./src/styles/header.css">
     <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/cards.css">
+    <link rel="stylesheet" href="./src/styles/footer.css">
 </head>
 <body>
     <header class="header">
-        <section class="header-logo">
-            <a href="#inicio"><img src="./src/assets/icons/logo.svg" alt="Logo Ecoar"></a>
+        <section class="header-logo icon">
+            <a href="#inicio"><img src="./src/assets/icons/logo-simbolo.svg" alt="Ecoar Botânica"></a>
         </section>
         <section class="header-paginas">
             <ul>
@@ -29,71 +31,198 @@
                 <a href="#velas">
                     <li>Velas</li>
                 </a>
-                <a href="#sobrenos">
-                    <li>Sobre Nós</li>
-                </a>
             </ul>
         </section>
         <section class="header-usuario">
-            <div class="usuario header-login">
-                <img src="" alt="Login">
+            <div class="header-pesquisa">
+                <input type="text" placeholder="Pesquise Aqui..." id="search-input">
+                <label for="search-input" class="search-icon">
+                    <img src="./src/assets/icons/search.svg" alt="Search">
+                </label>
             </div>
-            <div class="usuario header-shop">
-                <img src="" alt="Shop">
+            <div class="header-login icon">
+                <img src="./src/assets/icons/user.svg" alt="Login">
+            </div>
+            <div class="header-shop icon">
+                <img src="./src/assets/icons/shop.svg" alt="Shop">
             </div>
         </section>
     </header>
     <main class="main">
+        <a href="https://wa.me/5516997997436" class="icon"><img src="./src/assets/icons/whatsapp-contato.svg" alt="Whatsapp"></a>
         <section id="inicio" class="main-content section-inicio">
             <section class="inicio-apresentacao">
                 <div class="title">
                     <h1>Ecoar </br> Botânica</h1>
-                    <p>Aromas e Rituais </br> de </br> Bem-Estar</p>
+                    <p>Aromas e Rituais </br> de Bem-Estar</p>
                 </div>
                 <div class="image-visual">
-                    <img src="./src/assets/image/visual-ecoar.png" alt="Visual Ecoar">
+                    <img src="./src/assets/image/ecoar-agradecimento.png" alt="Visual Ecoar">
                 </div>
             </section>
-            <section class="carrossel">
-        
+        </section>
+        <section class="main-content section-destaques">
+            <h1>Destaques</h1>
+            <div class="carrossel-anuncio">
                 <input type="radio" name="slide" id="foto1" checked>
                 <input type="radio" name="slide" id="foto2">
                 <input type="radio" name="slide" id="foto3">
-        
                 <div class="fotos">
                     <div class="foto">
-                        <img src="src/assets/image/img-velasdecor-ecoar.png" alt="Velas Decorativas">
+                        <img src="src/assets/image/banner-brow-fixer.jpg" alt="Brow Fixer">
                     </div>
                     <div class="foto">
-                        <img src="src/assets/image/img-sabonetes-ecoar.png" alt="Sabonetes">
+                        <img src="src/assets/image/banner-sabonete.jpg" alt="Sabonete">
                     </div>
                     <div class="foto">
-                        <img src="src/assets/image/img-velas-ecoar.png" alt="Velas">
+                        <img src="src/assets/image/banner-shampoo-condicionador.jpg" alt="Shampoo e Condicionador">
                     </div>
                 </div>
-        
                 <div class="navigation">
                     <label for="foto1" class="bar"></label>
                     <label for="foto2" class="bar"></label>
                     <label for="foto3" class="bar"></label>
                 </div>
-            </section>
+            </div>
         </section>
         <section id="aromatizantes" class="main-content section-aroma">
             <h1>Aromatizantes</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Aroma</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Aroma</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Aroma</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Aroma</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="homesprays" class="main-content section-sprays">
             <h1>Home Sprays</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Spray</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Spray</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Spray</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Spray</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="sabonetes" class="main-content section-sabonetes">
             <h1>Sabonetes</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Sabonete</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Sabonete</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Sabonete</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Sabonete</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="velas" class="main-content section-velas">
             <h1>Velas</h1>
-        </section>
-        <section id="sobrenos" class="main-content section-sobrenos">
-            <h1>Sobre Nós</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Vela</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Vela</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Vela</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Vela</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
+    <footer class="footer">
+        <a href="#inicio" class="icon"><img src="./src/assets/icons/logo-simbolo-02.svg" alt="Ecoar Botânica"></a>
+        <a href="https://www.tiktok.com/@ecoarbotanica" class="icon"><img src="./src/assets/icons/instagram.svg" alt="Instagram"></a>
+        <a href="https://www.instagram.com/ecoarbotanica" class="icon"><img src="./src/assets/icons/tiktok.svg" alt="Tiktok"></a>
+        <a href="https://wa.me/5516997997436" class="icon"><img src="./src/assets/icons/whatsapp.svg" alt="Whatsapp"></a>
+    </footer>
 </body>
 </html>

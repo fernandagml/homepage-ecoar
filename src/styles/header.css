@@ -15,14 +15,8 @@
     z-index: 1000;
 }
 
-.header-logo{
+.header-logo img{
     height: 8vh;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-
-.header-logo:hover{
-    filter: drop-shadow(0 0 5px #FFF1F4);;
 }
 
 .header-paginas ul{
@@ -35,24 +29,35 @@
 .header-paginas li{
     cursor: pointer;
     padding: 10px 10px;
-    color: #FFF1F4;
+    color: #f2f2f2;
     font-size: 22px;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgb(0, 0, 0, 0.3);
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 .header-paginas li:hover{
-    background-color: #FFF1F4;
-    color: #820808;
-    filter: drop-shadow(0 0  5px #FFF1F4);
+    background-color: #f2f2f2;
+    color: #ca7690;
+    filter: drop-shadow(0 0 5px #f2f2f2);
     font-weight: bold;
 }
 
-.header-usuario{
-
+.header-pesquisa{
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.usuario{
-    
+.header-pesquisa input{
+    width: 200px; 
+    height: 35px;
+    border-radius: 10px;
+    padding: 0 10px;
+    outline: none;
+}
+
+.header-usuario{
+    display: flex;
+    gap: 25px;
 }

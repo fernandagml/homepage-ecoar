@@ -1,0 +1,10 @@
+.footer{
+    width: 100vw;
+    height: 80vh;
+    background-image: url('../assets/image/fundo-verde.png');
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
