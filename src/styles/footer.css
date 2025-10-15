@@ -1,10 +1,68 @@
-.footer{
+.footer {
     width: 100vw;
-    height: 80vh;
-    background-image: url('../assets/image/fundo-verde.png');
+    height: 80vh; 
+    background-image: url('../assets/icons/png/fundo-verde.png');
     background-size: cover;
+    padding: 40px 20px;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.footer-content-group {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.footer h3 {
+    color: #f2f2f2;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ad9a58;
+    padding-bottom: 5px;
+}
+
+.footer p, .footer a, strong, span{
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.footer a:hover {
+    color: #ad9a58;
+    text-decoration: underline;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.footer-creditos {
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+    color: #f2f2f2;
+    font-size: 14px;
+    padding-top: 20px;
+    border-top: 1px solid #777;
+}
+
+.footer-logo img {
+    height: 200px;
+    transition: transform 0.5s ease;
+}
+
+.footer-logo:hover {
+    filter: drop-shadow(0 0 5px #000);
+    transform: scale(1.05);
 }

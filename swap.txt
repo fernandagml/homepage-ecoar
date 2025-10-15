@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoar Botânica</title>
+
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/global.css">
+    <link rel="stylesheet" href="./src/styles/header.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/cards.css">
+    <link rel="stylesheet" href="./src/styles/footer.css">
+</head>
+<body>
+    <header class="header">
+        <section class="header-logo">
+            <a href="#inicio"><img src="./src/assets/icons/logo-simbolo.svg" alt="Ecoar Botânica"></a>
+        </section>
+        <section class="header-paginas">
+            <ul>
+                <a href="#aromatizantes">
+                    <li>Aromatizantes</li>
+                </a>
+                <a href="#homesprays">
+                    <li>Home Sprays</li>
+                </a>
+                <a href="#sabonetes">
+                    <li>Sabonetes</li>
+                </a>
+                <a href="#velas">
+                    <li>Velas</li>
+                </a>
+            </ul>
+        </section>
+        <section class="header-usuario">
+            <div class="header-pesquisa">
+                <input type="text" placeholder="Pesquise Aqui..." id="search-input">
+                <label for="search-input" class="search-icon">
+                    <img src="./src/assets/icons/search.svg" alt="Search">
+                </label>
+            </div>
+            <div class="header-login icon">
+                <img src="./src/assets/icons/user.svg" alt="Login">
+            </div>
+            <div class="header-shop icon">
+                <img src="./src/assets/icons/shop.svg" alt="Shop">
+            </div>
+        </section>
+    </header>
+    <main class="main">
+        <a href="https://wa.me/5516997997436" class="icon"><img src="./src/assets/icons/whatsapp-contato.svg" alt="Whatsapp"></a>
+        <section id="inicio" class="main-content section-inicio">
+            <section class="inicio-apresentacao">
+                <div class="title">
+                    <h1>Ecoar </br> Botânica</h1>
+                    <p>Aromas e Rituais </br> de Bem-Estar</p>
+                </div>
+                <div class="image-visual">
+                    <img src="./src/assets/image/ecoar-agradecimento.png" alt="Visual Ecoar">
+                </div>
+            </section>
+        </section>
+        <section class="main-content section-destaques">
+            <div class="carrossel-anuncio">
+                <input type="radio" name="slide" id="foto1" checked>
+                <input type="radio" name="slide" id="foto2">
+                <input type="radio" name="slide" id="foto3">
+                <div class="fotos">
+                    <div class="foto">
+                        <img src="src/assets/image/banner-brow-fixer.jpg" alt="Brow Fixer">
+                    </div>
+                    <div class="foto">
+                        <img src="src/assets/image/banner-sabonete.jpg" alt="Sabonete">
+                    </div>
+                    <div class="foto">
+                        <img src="src/assets/image/banner-shampoo-condicionador.jpg" alt="Shampoo e Condicionador">
+                    </div>
+                </div>
+                <div class="navigation">
+                    <label for="foto1" class="bar"></label>
+                    <label for="foto2" class="bar"></label>
+                    <label for="foto3" class="bar"></label>
+                </div>
+            </div>
+        </section>
+        <section id="aromatizantes" class="main-content section-aroma">
+            <h1>Aromatizantes</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Aroma</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Aroma</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Aroma</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Aroma</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="homesprays" class="main-content section-sprays">
+            <h1>Home Sprays</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Spray</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Spray</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Spray</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Spray</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sabonetes" class="main-content section-sabonetes">
+            <h1>Sabonetes</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Sabonete</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Sabonete</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Sabonete</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Sabonete</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="velas" class="main-content section-velas">
+            <h1>Velas</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Vela</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Vela</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Vela</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="" alt="">
+                    <div class="card-text">
+                        <h6>Vela</h6>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-social">
+            <a href="https://www.tiktok.com/@ecoarbotanica" target="_blank" class="icon"><img src="./src/assets/icons/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.instagram.com/ecoarbotanica" target="_blank" class="icon"><img src="./src/assets/icons/tiktok.svg" alt="Tiktok"></a>
+            <a href="https://wa.me/5516997997436" target="_blank" class="icon"><img src="./src/assets/icons/whatsapp.svg" alt="Whatsapp"></a>
+        </div>
+        <a href="#inicio" class="footer-logo"><img src="./src/assets/icons/logo-simbolo-02.svg" alt="Ecoar Botânica"></a>
+    
+    </footer>
+</body>
+</html>
+
+Global:
+.main-content{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon img{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.icon:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px #000);
+}
+
+Header:
+.header{
+    width: 100%;
+    height: 10vh;
+
+    background-color: #3F4D36;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-logo img{
+    height: 8vh;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.header-logo:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px #000);
+}
+
+.header-paginas ul{
+    display: flex;
+    flex-direction: row;
+
+    gap: 40px;
+}
+
+.header-paginas li{
+    cursor: pointer;
+    padding: 10px 10px;
+    color: #f2f2f2;
+    font-size: 22px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.3);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.header-paginas li:hover{
+    background-color: #f2f2f2;
+    color: #ca7690;
+    filter: drop-shadow(0 0 5px #f2f2f2);
+    font-weight: bold;
+}
+
+.header-pesquisa{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-pesquisa input{
+    max-width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    padding: 0 10px;
+    outline: none;
+}
+
+.header-usuario{
+    display: flex;
+    gap: 20px;
+}
+
+.search-icon img{
+    height: 40px;
+    width: 40px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.search-icon:hover{
+    filter: drop-shadow(0 0 5px #000);
+}
+
+Main:
+.main-content{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.main-content h1{
+    font-family: 'Vonca', sans-serif;
+    font-size: 60px;
+}
+
+.section-inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+.inicio-apresentacao{
+    display: flex;
+    flex-direction: row;
+    gap: 250px;
+}
+
+.title h1{
+    font-family: 'Vonca', sans-serif;
+    font-size: 140px;
+}
+
+.title p{
+    color: #ad9a58;
+    font-size: 40px;
+}
+
+.image-visual img{
+    height: 70vh;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+
+.section-destaques{
+    background-image: url(../assets/image/estampa-fundo.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.carrossel-anuncio {
+    width: 75vw;
+    height: 80vh;
+
+    overflow: hidden; 
+
+    position: relative;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+}
+
+.carrossel-anuncio input {
+    display: none;
+}
+
+.fotos {
+    /* 3 imagens 100% = 300% */
+    width: 300%;
+    height: 100%;
+    display: flex;
+    transition: all 0.5s ease;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    /* serve para centralizar a navegação */
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.slide {
+    width: 33.333%;
+    height: 100%;
+}
+
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+}
+
+.bar {
+    width: 40px;
+    height: 8px;
+    border: 2px solid #f4f4f4;
+    margin: 6px;
+    cursor: pointer;
+    background: #FFF1F4;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+
+.bar:hover {
+    background: #3F4D36;
+}
+
+#foto1:checked ~ .fotos {
+    margin-left: 0; 
+}
+/*  move a imagem 1 100% para a esquerda (mostrando a 2ª imagem) */
+#foto2:checked ~ .fotos {
+    margin-left: -100%;
+}
+/* move a imagem 2 200% para a esquerda (mostrando a 3ª imagem) */
+#foto3:checked ~ .fotos {
+    margin-left: -200%;
+}
+/* efeito de destaque da navegação */
+#foto1:checked ~ .navigation .bar:nth-child(1),
+#foto2:checked ~ .navigation .bar:nth-child(2),
+#foto3:checked ~ .navigation .bar:nth-child(3) {
+    background: #3F4D36;
+}
+
+Cards:
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.card{
+    width: 40vh;
+    height: 60vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border: 5px solid #3F4D36;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img{
+    height: 20vh;
+    width: 10vh;
+}
+
+.card h6{
+    font-family: 'Vonca';
+    font-size: 50px;
+}
+
+.card p{
+    font-size: 24px;
+}
+
+Footer:
+.footer{
+    width: 100vw;
+    height: 80vh;
+    background-image: url('../assets/image/fundo-verde.png');
+    background-size: cover;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer-social{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.footer-logo img{
+    height: 250px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.footer-logo:hover{
+    filter: drop-shadow(0 0 5px #000);
+    transform: scale(1.1);
+}
+
+Footer meu:
+<footer class="footer">
+        <nav class="footer-social"> 
+            <a href="https://www.tiktok.com/@ecoarbotanica" target="_blank" class="icon" title="Visite nosso Instagram">
+                <img src="./src/assets/icons/instagram.svg" alt="Ícone do Instagram">
+            </a>
+            <a href="https://www.instagram.com/ecoarbotanica" target="_blank" class="icon" title="Visite nosso TikTok">
+                <img src="./src/assets/icons/tiktok.svg" alt="Ícone do Tiktok">
+            </a>
+            <a href="https://wa.me/5516997997436" target="_blank" class="icon" title="Fale Conosco pelo WhatsApp">
+                <img src="./src/assets/icons/whatsapp.svg" alt="Ícone do Whatsapp">
+            </a>
+        </nav>
+        
+        <p class="footer-creditos">
+            <a href="#inicio" class="footer-logo">
+                <img src="./src/assets/icons/logo-simbolo-02.svg" alt="Ecoar Botânica">
+            </a>
+            <span>© 2025 Ecoar Botânica. Desenvolvido por <strong>Parceiro de Programação.</strong></span>
+        </p>
+    </footer>
+
+.footer{
+    width: 100vw;
+    height: 80vh;
+    background-image: url('../assets/image/fundo-verde.png');
+    background-size: cover;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer-social{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.footer-logo img{
+    height: 250px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.footer-logo:hover{
+    filter: drop-shadow(0 0 5px #000);
+    transform: scale(1.1);
+}

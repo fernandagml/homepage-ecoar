@@ -17,6 +17,13 @@
 
 .header-logo img{
     height: 8vh;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.header-logo:hover{
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px #000);
 }
 
 .header-paginas ul{
@@ -26,7 +33,10 @@
     gap: 40px;
 }
 
-.header-paginas li{
+/* Estilizando o link <a> para a nova estrutura semântica */
+.header-paginas a{
+    display: block; 
+    text-decoration: none;
     cursor: pointer;
     padding: 10px 10px;
     color: #f2f2f2;
@@ -36,7 +46,7 @@
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-.header-paginas li:hover{
+.header-paginas a:hover{
     background-color: #f2f2f2;
     color: #ca7690;
     filter: drop-shadow(0 0 5px #f2f2f2);
@@ -50,7 +60,7 @@
 }
 
 .header-pesquisa input{
-    width: 200px; 
+    max-width: 200px;
     height: 35px;
     border-radius: 10px;
     padding: 0 10px;
@@ -59,5 +69,16 @@
 
 .header-usuario{
     display: flex;
-    gap: 25px;
+    gap: 20px;
+}
+
+.search-icon img{
+    height: 40px;
+    width: 40px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.search-icon:hover{
+    filter: drop-shadow(0 0 5px #000);
 }

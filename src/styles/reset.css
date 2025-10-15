@@ -10,6 +10,8 @@
 
     font-family: 'Satochi', sans-serif;
     color: #3F4D36;
+
+    scrollbar-width: none;
 }
 
 @font-face {

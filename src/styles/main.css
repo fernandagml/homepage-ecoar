@@ -1,13 +1,16 @@
 .main-content{
-    padding: 0 20px;
-    display: flex;
     flex-direction: column;
     gap: 50px;
+    padding: 0 50px;
+    padding-top: 10vh;
+    align-items: center;
 }
 
-.main-content h1{
+/* Títulos das Seções de Produto (agora <h2>) */
+.main-content h2{
     font-family: 'Vonca', sans-serif;
     font-size: 60px;
+    text-align: center;
 }
 
 .section-inicio{
@@ -21,7 +24,7 @@
 .inicio-apresentacao{
     display: flex;
     flex-direction: row;
-    gap: 170px;
+    gap: 250px;
 }
 
 .title h1{
@@ -40,6 +43,8 @@
 }
 
 .section-destaques{
+    background-image: url('../assets/icons/png/estampa-amarela.png');
+    background-size: cover;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -67,16 +72,7 @@
     transition: all 0.5s ease;
 }
 
-.navigation {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    /* serve para centralizar a navegação */
-    transform: translateX(-50%);
-    display: flex;
-}
-
-.slide {
+.foto {
     width: 33.333%;
     height: 100%;
 }
@@ -91,6 +87,8 @@
     position: absolute;
     bottom: 20px;
     left: 50%;
+    /* serve para centralizar a navegação */
+    transform: translateX(-50%);
     display: flex;
 }
 
@@ -112,7 +110,7 @@
 #foto1:checked ~ .fotos {
     margin-left: 0; 
 }
-/*  move a imagem 1 100% para a esquerda (mostrando a 2ª imagem) */
+/*  move a imagem 1 100% para a esquerda (mostrando a 2ª imagem) */
 #foto2:checked ~ .fotos {
     margin-left: -100%;
 }
@@ -125,4 +123,13 @@
 #foto2:checked ~ .navigation .bar:nth-child(2),
 #foto3:checked ~ .navigation .bar:nth-child(3) {
     background: #3F4D36;
+}
+
+.section-sabonetes{
+    height: 160vh;
+    justify-content: flex-start;
+}
+
+.section-sprays{
+    height: 160vh;
 }

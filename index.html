@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ecoar Botânica</title>
+    <title>Ecoar Botânica | Aromas e Rituais de Bem-Estar</title>
 
     <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="./src/styles/global.css">
@@ -13,216 +13,329 @@
     <link rel="stylesheet" href="./src/styles/footer.css">
 </head>
 <body>
+    
     <header class="header">
-        <section class="header-logo icon">
-            <a href="#inicio"><img src="./src/assets/icons/logo-simbolo.svg" alt="Ecoar Botânica"></a>
-        </section>
-        <section class="header-paginas">
+        <div class="header-logo"> 
+            <a href="#inicio">
+                <img src="./src/assets/icons/svg/logo-simbolo.svg" alt="Ecoar Botânica - Voltar ao início">
+            </a>
+        </div>
+        
+        <nav class="header-paginas">
             <ul>
-                <a href="#aromatizantes">
-                    <li>Aromatizantes</li>
-                </a>
-                <a href="#homesprays">
-                    <li>Home Sprays</li>
-                </a>
-                <a href="#sabonetes">
-                    <li>Sabonetes</li>
-                </a>
-                <a href="#velas">
-                    <li>Velas</li>
-                </a>
+                <li><a href="#aromatizantes">Aromatizantes</a></li>
+                <li><a href="#homesprays">Home Sprays</a></li>
+                <li><a href="#sabonetes">Sabonetes</a></li>
+                <li><a href="#cabelos">Para Cabelos</a></li>
+                <li><a href="#velas">Velas</a></li>
             </ul>
-        </section>
-        <section class="header-usuario">
+        </nav>
+        
+        <div class="header-usuario">
             <div class="header-pesquisa">
                 <input type="text" placeholder="Pesquise Aqui..." id="search-input">
                 <label for="search-input" class="search-icon">
-                    <img src="./src/assets/icons/search.svg" alt="Search">
+                    <img src="./src/assets/icons/svg/search.svg" alt="Ícone de Pesquisa">
                 </label>
             </div>
-            <div class="header-login icon">
-                <img src="./src/assets/icons/user.svg" alt="Login">
-            </div>
-            <div class="header-shop icon">
-                <img src="./src/assets/icons/shop.svg" alt="Shop">
-            </div>
-        </section>
+            <a href="#" class="header-login icon" title="Login / Minha Conta">
+                <img src="./src/assets/icons/svg/user.svg" alt="Login">
+            </a>
+            <a href="#" class="header-shop icon" title="Carrinho de Compras">
+                <img src="./src/assets/icons/svg/shop.svg" alt="Carrinho de Compras">
+            </a>
+        </div>
     </header>
+    
     <main class="main">
-        <a href="https://wa.me/5516997997436" class="icon"><img src="./src/assets/icons/whatsapp-contato.svg" alt="Whatsapp"></a>
+        <a href="https://wa.me/5516997997436" class="whatsapp-contato icon" target="_blank" title="Fale Conosco pelo WhatsApp">
+            <img src="./src/assets/icons/svg/whatsapp-contato.svg" alt="Ícone do Whatsapp">
+        </a>
+        
         <section id="inicio" class="main-content section-inicio">
-            <section class="inicio-apresentacao">
+            <div class="inicio-apresentacao">
                 <div class="title">
-                    <h1>Ecoar </br> Botânica</h1>
-                    <p>Aromas e Rituais </br> de Bem-Estar</p>
+                    <h1>Ecoar Botânica</h1>
+                    <p>Aromas e Rituais de Bem-Estar</p>
                 </div>
-                <div class="image-visual">
-                    <img src="./src/assets/image/ecoar-agradecimento.png" alt="Visual Ecoar">
-                </div>
-            </section>
+                <figure class="image-visual">
+                    <img src="./src/assets/icons/png/ecoar-agradecimento.png" alt="Visual Ecoar: Vela aromática e plantas.">
+                    <figcaption>UM TOQUE DE BEM-ESTAR PARA O SEU LAR</figcaption>
+                </figure>
+            </div>
         </section>
+        
         <section class="main-content section-destaques">
-            <h1>Destaques</h1>
             <div class="carrossel-anuncio">
                 <input type="radio" name="slide" id="foto1" checked>
                 <input type="radio" name="slide" id="foto2">
                 <input type="radio" name="slide" id="foto3">
                 <div class="fotos">
-                    <div class="foto">
-                        <img src="src/assets/image/banner-brow-fixer.jpg" alt="Brow Fixer">
-                    </div>
-                    <div class="foto">
-                        <img src="src/assets/image/banner-sabonete.jpg" alt="Sabonete">
-                    </div>
-                    <div class="foto">
-                        <img src="src/assets/image/banner-shampoo-condicionador.jpg" alt="Shampoo e Condicionador">
-                    </div>
+                    <figure class="foto">
+                        <img src="src/assets/image/banners/brow-fixer.jpg" alt="Banner: Brow Fixer">
+                        <figcaption>Aproveite a oferta Brow Fixer!</figcaption>
+                    </figure>
+                    <figure class="foto">
+                        <a href="#sabonetes"><img src="src/assets/image/banners/sabonete.jpg" alt="Banner: Sabonetes Artesanais"></a>
+                        <figcaption>Conheça nossa linha de Sabonetes.</figcaption>
+                    </figure>
+                    <figure class="foto">
+                        <a href="#cabelos"><img src="src/assets/image/banners/shampoo-condicionador.jpg" alt="Banner: Shampoo e Condicionador"></a>
+                        <figcaption>Novidades em Shampoos e Condicionadores.</figcaption>
+                    </figure>
                 </div>
                 <div class="navigation">
-                    <label for="foto1" class="bar"></label>
-                    <label for="foto2" class="bar"></label>
-                    <label for="foto3" class="bar"></label>
+                    <label for="foto1" class="bar" title="Ir para o slide 1"></label>
+                    <label for="foto2" class="bar" title="Ir para o slide 2"></label>
+                    <label for="foto3" class="bar" title="Ir para o slide 3"></label>
                 </div>
             </div>
         </section>
+        
         <section id="aromatizantes" class="main-content section-aroma">
-            <h1>Aromatizantes</h1>
+            <h2>Aromatizantes</h2>
             <div class="cards">
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="card-text">
-                        <h6>Aroma</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="card-text">
-                        <h6>Aroma</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="card-text">
-                        <h6>Aroma</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="card-text">
-                        <h6>Aroma</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
+                <article class="card">
+                    <a href="#">
+                        <figure>
+                            <img src="#" alt="Nome do Aromatizante - Placeholder">
+                        </figure>
+                        <div class="card-text">
+                            <h3>Aroma do Produto (Nome)</h3>
+                            <p>Preço: <strong>R$ XX,XX</strong></p>
+                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card">...</article>
+                <article class="card">...</article>
+                <article class="card">...</article>
             </div>
         </section>
+        
         <section id="homesprays" class="main-content section-sprays">
-            <h1>Home Sprays</h1>
+            <h2>Home Sprays</h2>
             <div class="cards">
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="card-text">
-                        <h6>Spray</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="card-text">
-                        <h6>Spray</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="card-text">
-                        <h6>Spray</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="card-text">
-                        <h6>Spray</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
+                <article class="card">
+                    <a href="#">
+                        <figure>
+                            <img src="src/assets/image/homesprays/bambu.jpg" alt="Home Spray Bambu">
+                        </figure>
+                        <div class="card-text">
+                            <h3>Bambu</h3>
+                            <p>Preço: <strong>R$ 39,00</strong></p>
+                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card">
+                    <a href="#">
+                        <figure>
+                            <img src="src/assets/image/homesprays/capim-dourado.jpg" alt="Home Spray Capim Dourado">
+                        </figure>
+                        <div class="card-text">
+                            <h3 style="font-size: 40px;">Capim Dourado</h3>
+                            <p>Preço: <strong>R$ 39,00</strong></p>
+                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card">
+                    <a href="#">
+                        <figure>
+                            <img src="src/assets/image/homesprays/lavanda.jpg" alt="Home Spray Lavanda">
+                        </figure>
+                        <div class="card-text">
+                            <h3>Lavanda</h3>
+                            <p>Preço: <strong>R$ 39,00</strong></p>
+                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card">
+                    <a href="#">
+                        <figure>
+                            <img src="src/assets/image/homesprays/trussadi.jpg" alt="Home Spray Trussadi">
+                        </figure>
+                        <div class="card-text">
+                            <h3>Trussadi</h3>
+                            <p>Preço: <strong>R$ 39,00</strong></p>
+                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card">
+                    <a href="#">
+                        <figure>
+                            <img src="src/assets/image/homesprays/vanilla.jpg" alt="Home Spray Vanilla">
+                        </figure>
+                        <div class="card-text">
+                            <h3>Vannila</h3>
+                            <p>Preço: <strong>R$ 39,00</strong></p>
+                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                </article>
             </div>
         </section>
+        
         <section id="sabonetes" class="main-content section-sabonetes">
-            <h1>Sabonetes</h1>
+            <h2>Sabonetes</h2>
             <div class="cards">
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="card-text">
-                        <h6>Sabonete</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="card-text">
-                        <h6>Sabonete</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="card-text">
-                        <h6>Sabonete</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="card-text">
-                        <h6>Sabonete</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
+                <article class="card">
+                    <a href="#">
+                        <figure>
+                            <img src="src/assets/image/sabonetes/acafrao.jpg" alt="Sabonete Açafrão">
+                        </figure>
+                        <div class="card-text">
+                            <h3>Açafrão</h3>
+                            <p>Preço: <strong>R$ 36,80</strong></p>
+                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card">
+                    <a href="#">
+                        <figure>
+                            <img src="src/assets/image/sabonetes/argila-verde.jpg" alt="Sabonete Argila Verde">
+                        </figure>
+                        <div class="card-text">
+                            <h3>Argila Verde</h3>
+                            <p>Preço: <strong>R$ 19,90</strong></p>
+                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card">
+                    <a href="#">
+                        <figure>
+                            <img src="src/assets/image/sabonetes/camomila.jpg" alt="Sabonete Camomila">
+                        </figure>
+                        <div class="card-text">
+                            <h3>Camomila</h3>
+                            <p>Preço: <strong>R$ 18,00</strong></p>
+                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card">
+                    <a href="#">
+                        <figure>
+                            <img src="src/assets/image/sabonetes/cristais.jpg" alt="Sabonete Cristais">
+                        </figure>
+                        <div class="card-text">
+                            <h3>Cristais</h3>
+                            <p>Preço: <strong>R$ 19,00</strong></p>
+                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card">
+                    <a href="#">
+                        <figure>
+                            <img src="src/assets/image/sabonetes/dolamita.jpg" alt="Sabonete Dolamita">
+                        </figure>
+                        <div class="card-text">
+                            <h3>Dolamita</h3>
+                            <p>Preço: <strong>R$ 18,00</strong></p>
+                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card">
+                    <a href="#">
+                        <figure>
+                            <img src="src/assets/image/sabonetes/sal grosso-arruda-alecrim.jpg" alt="Sabonete Sal Grosso, Arruda e Alecrim">
+                        </figure>
+                        <div class="card-text">
+                            <h3 style="font-size: 40px;">Sal grosso, Arruda e Alecrim</h3>
+                            <p>Preço: <strong>R$ 19,00</strong></p>
+                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+        <section id="cabelos" class="main-content section-cabelos">
+            <h2>Shampoo e Condicionador em Barra</h2>
+            <div class="cards">
+                <article class="card">
+                    <a href="#">
+                        <figure>
+                            <img src="src/assets/image/cabelos/shampoo.jpg" alt="Shampoo">
+                        </figure>
+                        <div class="card-text">
+                            <h3 style="font-size: 40px;">Shampoo</h3>
+                            <p>Preço: <strong>R$ XX,XX</strong></p>
+                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="card">
+                    <a href="#">
+                        <figure>
+                            <img src="src/assets/image/cabelos/condicionador.jpg" alt="Condicionador">
+                        </figure>
+                        <div class="card-text">
+                            <h3 style="font-size: 40px;">Condicionador</h3>
+                            <p>Preço: <strong>R$ XX,XX</strong></p>
+                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </a>
+                </article>
             </div>
         </section>
         <section id="velas" class="main-content section-velas">
-            <h1>Velas</h1>
+            <h2>Velas</h2>
             <div class="cards">
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="card-text">
-                        <h6>Vela</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="card-text">
-                        <h6>Vela</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="card-text">
-                        <h6>Vela</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="" alt="">
-                    <div class="card-text">
-                        <h6>Vela</h6>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
+                <article class="card">...</article>
+                <article class="card">...</article>
             </div>
         </section>
+        
     </main>
     <footer class="footer">
-        <a href="#inicio" class="icon"><img src="./src/assets/icons/logo-simbolo-02.svg" alt="Ecoar Botânica"></a>
-        <a href="https://www.tiktok.com/@ecoarbotanica" class="icon"><img src="./src/assets/icons/instagram.svg" alt="Instagram"></a>
-        <a href="https://www.instagram.com/ecoarbotanica" class="icon"><img src="./src/assets/icons/tiktok.svg" alt="Tiktok"></a>
-        <a href="https://wa.me/5516997997436" class="icon"><img src="./src/assets/icons/whatsapp.svg" alt="Whatsapp"></a>
+        <nav class="footer-social"> 
+            <a href="https://www.tiktok.com/@ecoarbotanica" target="_blank" class="icon" title="Visite nosso Instagram">
+                <img src="./src/assets/icons/svg/instagram.svg" alt="Ícone do Instagram">
+            </a>
+            <a href="https://www.instagram.com/ecoarbotanica" target="_blank" class="icon" title="Visite nosso TikTok">
+                <img src="./src/assets/icons/svg/tiktok.svg" alt="Ícone do Tiktok">
+            </a>
+            <a href="https://wa.me/5516997997436" target="_blank" class="icon" title="Fale Conosco pelo WhatsApp">
+                <img src="./src/assets/icons/svg/whatsapp.svg" alt="Ícone do Whatsapp">
+            </a>
+        </nav>
+
+        <section class="footer-content-group">
+            
+            <div class="footer-contact">
+                <h3>Fale Conosco</h3>
+                <address>
+                    <p>Email: <a href="mailto:ecoarbotanica@gmail.com">ecoarbotanica@gmail.com</a></p>
+                    <p>Telefone: <a href="tel:+5516997997436">(16) 99799-7436</a></p>
+                    <p>Localização: <strong>Araraquara, SP</strong></p>
+                </address>
+            </div>
+            <a href="#inicio" class="footer-logo">
+                <img src="./src/assets/icons/svg/logo-simbolo-02.svg" alt="Ecoar Botânica">
+            </a>
+            <nav class="footer-links">
+                <h3>Navegação Rápida</h3>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre a Marca</a></li>
+                    <li><a href="#faq">FAQ e Ajuda</a></li>
+                    <li><a href="#politica">Política de Privacidade</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section class="footer-info">
+            <p class="footer-creditos">
+                <span>© 2025 Ecoar Botânica. Todos os direitos reservados.</span>
+                <span class="developer-info">Desenvolvido com ♥ por Fernanda Gaspar.</span>
+            </p>
+        </section>
     </footer>
 </body>
 </html>
