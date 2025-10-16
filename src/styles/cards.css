@@ -14,7 +14,6 @@
     gap: 20px;
     border: 5px solid #3F4D36;
     box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-    cursor: pointer;
     transition: transform 0.5s ease;
     overflow: hidden;
 }
@@ -51,4 +50,23 @@
 
 .card-text strong{
     color: #ca7690;
+}
+
+button{
+    border: 2px solid #ca7690;
+    color: #ca7690;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    transition: 0.5s ease;
+}
+
+button:hover{
+    background-color: #ca7690;
+    color: #fff;
+}
+
+.card a{
+    margin: auto;
 }

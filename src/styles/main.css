@@ -20,10 +20,23 @@
     gap: 100px;
 }
 
-.inicio-apresentacao{
+.section-inicio__apresentação{
     display: flex;
     flex-direction: row;
     gap: 250px;
+}
+
+.section-inicio__apresentação button{
+    font-family: 'Vonca', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 10px 40px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
 
 .title h1{
@@ -50,7 +63,7 @@
     gap: 20px;
 }
 
-.carrossel-anuncio {
+.section-destaques__carrossel{
     width: 75vw;
     height: 80vh;
 
@@ -60,11 +73,11 @@
     box-shadow: 0 10px 15px rgba(0,0,0,0.3);
 }
 
-.carrossel-anuncio input {
+.section-destaques__carrossel input{
     display: none;
 }
 
-.fotos {
+.fotos{
     /* 3 imagens 100% = 300% */
     width: 300%;
     height: 100%;
@@ -72,18 +85,18 @@
     transition: all 0.5s ease;
 }
 
-.foto {
+.foto{
     width: 33.333%;
     height: 100%;
 }
 
-.foto img {
+.foto img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.navigation {
+.navigation{
     position: absolute;
     bottom: 20px;
     left: 50%;
@@ -92,7 +105,7 @@
     display: flex;
 }
 
-.bar {
+.bar{
     width: 40px;
     height: 8px;
     border: 2px solid #f4f4f4;
@@ -103,24 +116,24 @@
     transition: all 0.5s ease;
 }
 
-.bar:hover {
+.bar:hover{
     background: #3F4D36;
 }
 
-#foto1:checked ~ .fotos {
+#foto1:checked ~ .fotos{
     margin-left: 0; 
 }
 /*  move a imagem 1 100% para a esquerda (mostrando a 2ª imagem) */
-#foto2:checked ~ .fotos {
+#foto2:checked ~ .fotos{
     margin-left: -100%;
 }
 /* move a imagem 2 200% para a esquerda (mostrando a 3ª imagem) */
-#foto3:checked ~ .fotos {
+#foto3:checked ~ .fotos{
     margin-left: -200%;
 }
 /* efeito de destaque da navegação */
 #foto1:checked ~ .navigation .bar:nth-child(1),
 #foto2:checked ~ .navigation .bar:nth-child(2),
-#foto3:checked ~ .navigation .bar:nth-child(3) {
+#foto3:checked ~ .navigation .bar:nth-child(3){
     background: #3F4D36;
 }

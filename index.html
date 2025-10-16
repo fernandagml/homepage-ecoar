@@ -32,16 +32,16 @@
         </nav>
         
         <div class="header-usuario">
-            <div class="header-pesquisa">
+            <div class="header-usuario__pesquisa">
                 <input type="text" placeholder="Pesquise Aqui..." id="search-input">
                 <label for="search-input" class="search-icon">
                     <img src="./src/assets/icons/svg/search.svg" alt="Ícone de Pesquisa">
                 </label>
             </div>
-            <a href="#" class="header-login icon" title="Login / Minha Conta">
+            <a href="#" class="header-usuario__login icon" title="Login / Minha Conta">
                 <img src="./src/assets/icons/svg/user.svg" alt="Login">
             </a>
-            <a href="#" class="header-shop icon" title="Carrinho de Compras">
+            <a href="#" class="header-usuario__shop icon" title="Carrinho de Compras">
                 <img src="./src/assets/icons/svg/shop.svg" alt="Carrinho de Compras">
             </a>
         </div>
@@ -53,20 +53,24 @@
         </a>
         
         <section id="inicio" class="main-content section-inicio">
-            <div class="inicio-apresentacao">
+            <div class="section-inicio__apresentação">
                 <div class="title">
                     <h1>Ecoar Botânica</h1>
-                    <p>Aromas e Rituais de Bem-Estar</p>
+                    <p>Aromas e Rituais de Bem-Estar ❤</p>
+                    <p>Cada criação da Ecoar Botânica carrega boas intenções e mãos cuidadosas. Nossa missão é despertar o aconchego e abraçar você nos detalhes, com produtos que transformam cheiros em memórias e bem-estar.</p>
+                    <div>
+                        <a href="#destaques"><button>Explorar Coleção</button></a>
+                    </div>
                 </div>
                 <figure class="image-visual">
                     <img src="./src/assets/icons/png/ecoar-agradecimento.png" alt="Visual Ecoar: Vela aromática e plantas.">
-                    <figcaption>UM TOQUE DE BEM-ESTAR PARA O SEU LAR</figcaption>
+                    <figcaption>A natureza em harmonia com você</figcaption>
                 </figure>
             </div>
+            
         </section>
-        
-        <section class="main-content section-destaques">
-            <div class="carrossel-anuncio">
+        <section id="destaques" class="main-content section-destaques">
+            <div class="section-destaques__carrossel">
                 <input type="radio" name="slide" id="foto1" checked>
                 <input type="radio" name="slide" id="foto2">
                 <input type="radio" name="slide" id="foto3">
@@ -91,28 +95,25 @@
                 </div>
             </div>
         </section>
-        
         <section id="aromatizantes" class="main-content section-aroma">
             <h2>Aromatizantes</h2>
             <div class="cards">
                 <article class="card">
-                    <a href="#">
-                        <figure>
-                            <img src="#" alt="Nome do Aromatizante - Placeholder">
-                        </figure>
-                        <div class="card-text">
-                            <h3>Aroma do Produto (Nome)</h3>
-                            <p>Preço: <strong>R$ XX,XX</strong></p>
-                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </a>
+                    <figure>
+                        <img src="#" alt="Nome do Aromatizante - Placeholder">
+                    </figure>
+                    <div class="card-text">
+                        <h3>Aroma do Produto (Nome)</h3>
+                        <p>Preço: <strong>R$ XX,XX</strong></p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <a href="#"><button>Adicionar ao carrinho +</button></a>
                 </article>
                 <article class="card">...</article>
                 <article class="card">...</article>
                 <article class="card">...</article>
             </div>
         </section>
-        
         <section id="homesprays" class="main-content section-sprays">
             <h2>Home Sprays</h2>
             <div class="cards">
@@ -125,133 +126,122 @@
                         <p>Preço: <strong>R$ 39,00</strong></p>
                         <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
-                    <a href="#"><button></button></a>
+                    <a href="#"><button>Adicionar ao carrinho +</button></a>
                 </article>
                 <article class="card">
-                    <a href="#">
-                        <figure>
-                            <img src="src/assets/image/homesprays/capim-dourado.jpg" alt="Home Spray Capim Dourado">
-                        </figure>
-                        <div class="card-text">
-                            <h3>Capim Dourado</h3>
-                            <p>Preço: <strong>R$ 39,00</strong></p>
-                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </a>
+                    <figure>
+                        <img src="src/assets/image/homesprays/capim-dourado.jpg" alt="Home Spray Capim Dourado">
+                    </figure>
+                    <div class="card-text">
+                        <h3>Capim Dourado</h3>
+                        <p>Preço: <strong>R$ 39,00</strong></p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <a href="#"><button>Adicionar ao carrinho +</button></a>
                 </article>
                 <article class="card">
-                    <a href="#">
-                        <figure>
-                            <img src="src/assets/image/homesprays/lavanda.jpg" alt="Home Spray Lavanda">
-                        </figure>
-                        <div class="card-text">
-                            <h3>Lavanda</h3>
-                            <p>Preço: <strong>R$ 39,00</strong></p>
-                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </a>
+                    <figure>
+                        <img src="src/assets/image/homesprays/lavanda.jpg" alt="Home Spray Lavanda">
+                    </figure>
+                    <div class="card-text">
+                        <h3>Lavanda</h3>
+                        <p>Preço: <strong>R$ 39,00</strong></p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <a href="#"><button>Adicionar ao carrinho +</button></a>
                 </article>
                 <article class="card">
-                    <a href="#">
-                        <figure>
-                            <img src="src/assets/image/homesprays/trussadi.jpg" alt="Home Spray Trussadi">
-                        </figure>
-                        <div class="card-text">
-                            <h3>Trussadi</h3>
-                            <p>Preço: <strong>R$ 39,00</strong></p>
-                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </a>
+                    <figure>
+                        <img src="src/assets/image/homesprays/trussadi.jpg" alt="Home Spray Trussadi">
+                    </figure>
+                    <div class="card-text">
+                        <h3>Trussadi</h3>
+                        <p>Preço: <strong>R$ 39,00</strong></p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <a href="#"><button>Adicionar ao carrinho +</button></a>
                 </article>
                 <article class="card">
-                    <a href="#">
-                        <figure>
-                            <img src="src/assets/image/homesprays/vanilla.jpg" alt="Home Spray Vanilla">
-                        </figure>
-                        <div class="card-text">
-                            <h3>Vannila</h3>
-                            <p>Preço: <strong>R$ 39,00</strong></p>
-                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </a>
+                    <figure>
+                        <img src="src/assets/image/homesprays/vanilla.jpg" alt="Home Spray Vanilla">
+                    </figure>
+                    <div class="card-text">
+                        <h3>Vannila</h3>
+                        <p>Preço: <strong>R$ 39,00</strong></p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <a href="#"><button>Adicionar ao carrinho +</button></a>
                 </article>
             </div>
         </section>
-        
         <section id="sabonetes" class="main-content section-sabonetes">
             <h2>Sabonetes</h2>
             <div class="cards">
                 <article class="card">
-                    <a href="#">
-                        <figure>
-                            <img src="src/assets/image/sabonetes/acafrao.jpg" alt="Sabonete Açafrão">
-                        </figure>
-                        <div class="card-text">
-                            <h3>Açafrão</h3>
-                            <p>Preço: <strong>R$ 36,80</strong></p>
-                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </a>
+                    <figure>
+                        <img src="src/assets/image/sabonetes/acafrao.jpg" alt="Sabonete Açafrão">
+                    </figure>
+                    <div class="card-text">
+                        <h3>Açafrão</h3>
+                        <p>Preço: <strong>R$ 36,80</strong></p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <a href="#"><button>Adicionar ao carrinho +</button></a>
                 </article>
                 <article class="card">
-                    <a href="#">
-                        <figure>
-                            <img src="src/assets/image/sabonetes/argila-verde.jpg" alt="Sabonete Argila Verde">
-                        </figure>
-                        <div class="card-text">
-                            <h3>Argila Verde</h3>
-                            <p>Preço: <strong>R$ 19,90</strong></p>
-                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </a>
+                    <figure>
+                        <img src="src/assets/image/sabonetes/argila-verde.jpg" alt="Sabonete Argila Verde">
+                    </figure>
+                    <div class="card-text">
+                        <h3>Argila Verde</h3>
+                        <p>Preço: <strong>R$ 19,90</strong></p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <a href="#"><button>Adicionar ao carrinho +</button></a>
                 </article>
                 <article class="card">
-                    <a href="#">
-                        <figure>
-                            <img src="src/assets/image/sabonetes/camomila.jpg" alt="Sabonete Camomila">
-                        </figure>
-                        <div class="card-text">
-                            <h3>Camomila</h3>
-                            <p>Preço: <strong>R$ 18,00</strong></p>
-                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </a>
+                    <figure>
+                        <img src="src/assets/image/sabonetes/camomila.jpg" alt="Sabonete Camomila">
+                    </figure>
+                    <div class="card-text">
+                        <h3>Camomila</h3>
+                        <p>Preço: <strong>R$ 18,00</strong></p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <a href="#"><button>Adicionar ao carrinho +</button></a>
                 </article>
                 <article class="card">
-                    <a href="#">
-                        <figure>
-                            <img src="src/assets/image/sabonetes/cristais.jpg" alt="Sabonete Cristais">
-                        </figure>
-                        <div class="card-text">
-                            <h3>Cristais</h3>
-                            <p>Preço: <strong>R$ 19,00</strong></p>
-                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </a>
+                    <figure>
+                        <img src="src/assets/image/sabonetes/cristais.jpg" alt="Sabonete Cristais">
+                    </figure>
+                    <div class="card-text">
+                        <h3>Cristais</h3>
+                        <p>Preço: <strong>R$ 19,00</strong></p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <a href="#"><button>Adicionar ao carrinho +</button></a>
                 </article>
                 <article class="card">
-                    <a href="#">
-                        <figure>
-                            <img src="src/assets/image/sabonetes/dolamita.jpg" alt="Sabonete Dolamita">
-                        </figure>
-                        <div class="card-text">
-                            <h3>Dolamita</h3>
-                            <p>Preço: <strong>R$ 18,00</strong></p>
-                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </a>
+                    <figure>
+                        <img src="src/assets/image/sabonetes/dolamita.jpg" alt="Sabonete Dolamita">
+                    </figure>
+                    <div class="card-text">
+                        <h3>Dolamita</h3>
+                        <p>Preço: <strong>R$ 18,00</strong></p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <a href="#"><button>Adicionar ao carrinho +</button></a>
                 </article>
                 <article class="card">
-                    <a href="#">
-                        <figure>
-                            <img src="src/assets/image/sabonetes/sal grosso-arruda-alecrim.jpg" alt="Sabonete Sal Grosso, Arruda e Alecrim">
-                        </figure>
-                        <div class="card-text">
-                            <h3>Sal grosso, Arruda e Alecrim</h3>
-                            <p>Preço: <strong>R$ 19,00</strong></p>
-                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </a>
+                    <figure>
+                        <img src="src/assets/image/sabonetes/sal grosso-arruda-alecrim.jpg" alt="Sabonete Sal Grosso, Arruda e Alecrim">
+                    </figure>
+                    <div class="card-text">
+                        <h3>Sal grosso, Arruda e Alecrim</h3>
+                        <p>Preço: <strong>R$ 19,00</strong></p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <a href="#"><button>Adicionar ao carrinho +</button></a>
                 </article>
             </div>
         </section>
@@ -259,28 +249,26 @@
             <h2>Shampoo e Condicionador em Barra</h2>
             <div class="cards">
                 <article class="card">
-                    <a href="#">
-                        <figure>
-                            <img src="src/assets/image/cabelos/shampoo.jpg" alt="Shampoo">
-                        </figure>
-                        <div class="card-text">
-                            <h3>Shampoo</h3>
-                            <p>Preço: <strong>R$ XX,XX</strong></p>
-                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </a>
+                    <figure>
+                        <img src="src/assets/image/cabelos/shampoo.jpg" alt="Shampoo">
+                    </figure>
+                    <div class="card-text">
+                        <h3>Shampoo</h3>
+                        <p>Preço: <strong>R$ XX,XX</strong></p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <a href="#"><button>Adicionar ao carrinho +</button></a>
                 </article>
                 <article class="card">
-                    <a href="#">
-                        <figure>
-                            <img src="src/assets/image/cabelos/condicionador.jpg" alt="Condicionador">
-                        </figure>
-                        <div class="card-text">
-                            <h3>Condicionador</h3>
-                            <p>Preço: <strong>R$ XX,XX</strong></p>
-                            <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </a>
+                    <figure>
+                        <img src="src/assets/image/cabelos/condicionador.jpg" alt="Condicionador">
+                    </figure>
+                    <div class="card-text">
+                        <h3>Condicionador</h3>
+                        <p>Preço: <strong>R$ XX,XX</strong></p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <a href="#"><button>Adicionar ao carrinho +</button></a>
                 </article>
             </div>
         </section>
@@ -291,7 +279,6 @@
                 <article class="card">...</article>
             </div>
         </section>
-        
     </main>
     <footer class="footer">
         <nav class="footer-social"> 
@@ -305,10 +292,8 @@
                 <img src="./src/assets/icons/svg/whatsapp.svg" alt="Ícone do Whatsapp">
             </a>
         </nav>
-
-        <section class="footer-content-group">
-            
-            <div class="footer-contact">
+        <section class="footer-info">
+            <div class="footer-info__contact">
                 <h3>Fale Conosco</h3>
                 <address>
                     <p>Email: <a href="mailto:ecoarbotanica@gmail.com">ecoarbotanica@gmail.com</a></p>
@@ -316,10 +301,10 @@
                     <p>Localização: <strong>Araraquara, SP</strong></p>
                 </address>
             </div>
-            <a href="#inicio" class="footer-logo">
+            <a href="#inicio" class="footer-info__logo">
                 <img src="./src/assets/icons/svg/logo-simbolo-02.svg" alt="Ecoar Botânica">
             </a>
-            <nav class="footer-links">
+            <nav class="footer-info__links">
                 <h3>Navegação Rápida</h3>
                 <ul>
                     <li><a href="#inicio">Início</a></li>
@@ -329,11 +314,8 @@
                 </ul>
             </nav>
         </section>
-        <section class="footer-info">
-            <p class="footer-creditos">
-                <span>© 2025 Ecoar Botânica. Todos os direitos reservados.</span>
-                <span class="developer-info">Desenvolvido com ♥ por Fernanda Gaspar.</span>
-            </p>
+        <section class="footer-creditos">
+            <p><span>© 2025 Ecoar Botânica. Todos os direitos reservados.</span><span class="developer-info">Desenvolvido com ♥ por Fernanda Gaspar.</span></p>
         </section>
     </footer>
 </body>

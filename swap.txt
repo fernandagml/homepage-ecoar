@@ -587,3 +587,20 @@ Footer meu:
     filter: drop-shadow(0 0 5px #000);
     transform: scale(1.1);
 }
+
+
+
+
+header-pesquisa = header-usuario__pesquisa
+header-login = header-usuario__login
+header-shop = header-usuario__shop
+
+inicio-apresentacao = section-inicio__apresentação
+carrossel-anuncio = section-destaques__carrossel
+
+footer-content-group = footer-info
+footer-contact = footer-info__contact
+footer-logo = footer-info__logo
+footer-links = footer-info__links
+footer-info = footer-creditos
+footer-creditos = footer-creditos > p

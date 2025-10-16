@@ -52,18 +52,19 @@
     font-weight: bold;
 }
 
-.header-pesquisa{
+.header-usuario__pesquisa{
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.header-pesquisa input{
+.header-usuario__pesquisa input{
     max-width: 200px;
     height: 35px;
     border-radius: 10px;
     padding: 0 10px;
     outline: none;
+    border: none;
 }
 
 .header-usuario{
