@@ -1,13 +1,13 @@
 .cards{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
 }
 
 .card{
-    width: 20vw;
-    height: 60vh;
+    width: 350px;
+    height: 550px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -17,9 +17,6 @@
     cursor: pointer;
     transition: transform 0.5s ease;
     overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-
 }
 
 .card:hover{
@@ -39,17 +36,17 @@
 }
 
 .card-text{
-    padding: 20px;
+    padding: 15px;
 }
 
 .card h3{
     font-family: 'Vonca', sans-serif;
-    font-size: 48px; 
+    font-size: 2.6em;
     margin-bottom: 10px;
 }
 
 .card p{
-    font-size: 24px;
+    font-size: 1.3em
 }
 
 .card-text strong{

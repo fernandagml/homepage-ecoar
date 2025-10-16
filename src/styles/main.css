@@ -50,15 +50,6 @@
     gap: 20px;
 }
 
-.section-sabonetes{
-    height: 160vh;
-    justify-content: flex-start;
-}
-
-.section-sprays{
-    height: 160vh;
-}
-
 .carrossel-anuncio {
     width: 75vw;
     height: 80vh;
