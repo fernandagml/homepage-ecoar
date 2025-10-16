@@ -49,6 +49,17 @@
     font-size: 40px;
 }
 
+.title button{
+    color: white;
+    background-color: #ca7690;
+    transition: 0.5s ease;
+    margin-top: 40px;
+}
+
+.title button:hover{
+    transform: scale(1.05);
+}
+
 .image-visual img{
     height: 70vh;
     box-shadow: 0 10px 15px rgba(0,0,0,0.3);
@@ -59,7 +70,6 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-    padding-top: 0;
     gap: 20px;
 }
 
@@ -137,3 +147,4 @@
 #foto3:checked ~ .navigation .bar:nth-child(3){
     background: #3F4D36;
 }
+
