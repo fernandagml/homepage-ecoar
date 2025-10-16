@@ -6,7 +6,6 @@
     align-items: center;
 }
 
-/* Títulos das Seções de Produto (agora <h2>) */
 .main-content h2{
     font-family: 'Vonca', sans-serif;
     font-size: 60px;
@@ -47,7 +46,17 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
+    padding-top: 0;
     gap: 20px;
+}
+
+.section-sabonetes{
+    height: 160vh;
+    justify-content: flex-start;
+}
+
+.section-sprays{
+    height: 160vh;
 }
 
 .carrossel-anuncio {
@@ -123,13 +132,4 @@
 #foto2:checked ~ .navigation .bar:nth-child(2),
 #foto3:checked ~ .navigation .bar:nth-child(3) {
     background: #3F4D36;
-}
-
-.section-sabonetes{
-    height: 160vh;
-    justify-content: flex-start;
-}
-
-.section-sprays{
-    height: 160vh;
 }

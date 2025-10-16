@@ -42,7 +42,6 @@
     padding: 20px;
 }
 
-/* Alterado de h6 para h3 (novo título de produto semântico) */
 .card h3{
     font-family: 'Vonca', sans-serif;
     font-size: 48px; 
